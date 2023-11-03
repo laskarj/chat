@@ -1,11 +1,11 @@
 from django.apps import apps
-from django.db import models
-from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, AbstractUser
-from django.db.models.query import QuerySet
-from django.contrib.auth.models import PermissionsMixin
 from django.contrib.auth.hashers import make_password
-from django.utils.translation import gettext_lazy as _
+from django.contrib.auth.models import (AbstractBaseUser, BaseUserManager,
+                                        PermissionsMixin)
 from django.contrib.auth.validators import UnicodeUsernameValidator
+from django.db import models
+from django.db.models.query import QuerySet
+from django.utils.translation import gettext_lazy as _
 
 
 class ChatUserManager(BaseUserManager):
